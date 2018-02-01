@@ -2,10 +2,10 @@
 title: 'Simple R Functions '
 author: 'Yue Wu'
 date: "Feburary 1, 2018"
-output:
-pdf_document: default
-html_document:
-df_print: paged
+output: 
+  pdf_document: 
+    latex_engine: xelatex
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -301,7 +301,7 @@ testLoop2(c(1:8))
   \texttt{start} denotes $x_1$, and
   \texttt{rho} denotes $r$.
   Try out the function you have written:
-  • for $r = 2$ and $0 < x1 < 1$ you should get $x_n → 0.5$ as$ n → {\infty}$.
+  • for $r = 2$ and $0 < x1 < 1$ you should get $x_n → 0.5$ as $n → {\infty}$.
   • try \texttt{tmp <- quadmap(start=0.95, rho=2.99, niter=500)}
   Now switch back to the Commands window and type:
   \texttt{plot(tmp, type="l")}
